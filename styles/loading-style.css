@@ -1,0 +1,51 @@
+    @keyframes loading-bg {
+		from {background: rgba(51,51,51,0);}
+		to {background: rgba(51,51,51,1);}
+	}
+	
+	@keyframes move-the-ice {
+		from {margin: 20% 0 0 0; opacity: 0;}
+		to {margin: 10% 0 0 0; opacity: 1;}
+	}
+	
+	@keyframes move-loading-text {
+		from {color: rgba(255,255,255,0);}
+		to {color: rgba(255,255,255,1);}
+	}
+	
+	#ice-gif{
+		width: 20%;
+		animation-name: move-the-ice;
+		animation-duration: 1s;
+		margin: 10% 0 0 0;
+    }
+	
+	#loading-text{
+		color: rgba(255,255,255,1);
+		animation-name: move-loading-text;
+		animation-duration: 2s;
+		font-size: xx-large;
+		font-family: 'Tomorrow', sans-serif;
+		margin-top: 3%;
+	}
+	
+	.overlay {
+	display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(51,51,51,1);
+    z-index: 2;
+	text-align: center;
+	animation-name: loading-bg;
+	animation-duration: 1s;
+}
+
+@media only screen and (max-width: 720px) {
+    
+    .overlay {
+        padding-top: 40%;
+    }
+}
