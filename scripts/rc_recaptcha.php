@@ -3,7 +3,7 @@
 function CheckCaptcha($userResponse) {
         $fields_string = '';
         $fields = array(
-            'secret' => '6LctH-MUAAAAANqQiv5SynVCEc1hdhwXE1gTLr5k',
+            'secret' => /* RECAPTCHA SECRET KEY */,
             'response' => $userResponse
         );
         foreach($fields as $key=>$value)

@@ -32,7 +32,7 @@ if(!isset($_SESSION["applied"])){
         
         $msg = wordwrap($msg,70);
         
-        mail("applications@rebrovocraft.info",$_SESSION["username"],$msg);
+        mail(/* DESTINATION */,$_SESSION["username"],$msg);
     
         $_SESSION["application_send"] = "success";
         $_SESSION["applied"] = true;

@@ -5,8 +5,8 @@ if (session_status() == PHP_SESSION_NONE){
 
 include 'rc_recaptcha.php';
 
-$host    = "88.203.208.126";
-$port    = 18181;
+$host    = /* IP */;
+$port    = /* PORT */;
 
 $user = new stdClass();
 $user->task = "rc_login";

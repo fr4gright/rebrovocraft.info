@@ -5,8 +5,8 @@ if (session_status() == PHP_SESSION_NONE){
 
 include 'rc_recaptcha.php';
 
-$host    = "rebrovocraft.info";
-$port    = 18181;
+$host    = /* IP */;
+$port    = /* PORT */;
 
 $user = new stdClass();
 $user->task = "rc_get_email";

@@ -1,5 +1,5 @@
 <?php
-$status = json_decode(file_get_contents('https://api.mcsrvstat.us/2/88.203.208.126:37787'));
+$status = json_decode(file_get_contents(/* API URL */));
 
 if (session_status() == PHP_SESSION_NONE){
     session_start();

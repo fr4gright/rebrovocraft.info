@@ -5,8 +5,8 @@ if (session_status() == PHP_SESSION_NONE){
 
 if(!isset($_SESSION["bans"]))
 {
-    $host = "88.203.208.126";
-    $port = 18181;
+    $host = /* IP */;
+    $port = /* PORT */;
     
     $voterequest = new stdClass();
     $voterequest->task = "rc_getbans";
